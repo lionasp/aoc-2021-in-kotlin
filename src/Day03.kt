@@ -40,10 +40,8 @@ fun main() {
 
     fun part2(input: List<String>): Int {
         val oxygen = scan(input, 0, ::oxygenComparator)
-        val co2 = scan(input, 0, ::co2Comparator)
-        println(oxygen)
-        println(co2)
-        return input.size
+        val co2 = scan(input, 0, ::co2Comparator)        
+        return oxygen * co2
 
     }
 
